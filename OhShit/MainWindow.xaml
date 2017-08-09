@@ -5,10 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OhShit"
         mc:Ignorable="d"
-        Title="Oh Shit !" Height="136.441" Width="235.064" WindowStyle="ToolWindow" Initialized="OhShit_Initialized">
+        Title="Oh Shit !" Height="143.441" Width="333.064" WindowStyle="ToolWindow" Initialized="OhShit_Initialized">
     <Grid>
-        <Label Content="Press CTRL+Backspace to exit POE" HorizontalAlignment="Left" Margin="16,22,0,0" VerticalAlignment="Top"/>
-        <Button Content="Quit" HorizontalAlignment="Left" Margin="76,66,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="277*"/>
+            <ColumnDefinition Width="48*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Press your hotkey to kill TCP for POE" HorizontalAlignment="Left" Margin="54,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.532,0.577" Height="26" Width="203"/>
+        <Button Content="Quit" HorizontalAlignment="Left" Margin="118,66,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" RenderTransformOrigin="0.373,-2.15" Height="20"/>
 
     </Grid>
 </Window>

@@ -39,17 +39,17 @@ namespace OhShit
         {
             try
             {
-                Process.Start(System.Configuration.ConfigurationManager.AppSettings.Get("command_line"), System.Configuration.ConfigurationManager.AppSettings.Get("arguments"));
+                Process.Start(System.Configuration.ConfigurationManager.AppSettings.Get("command_line"), System.Configuration.ConfigurationManager.AppSettings.Get("arguments").ToString());
             }
             catch (Exception ex)
             {
-               // MessageBox.Show(ex.Message);
+               MessageBox.Show(ex.Message);
             }
         }
 
         private void OhShit_Initialized(object sender, EventArgs e)
         {
-            _hotKey = new HotKey(Key.Back, KeyModifier.Ctrl, OnHotKeyHandler);
+            _hotKey = new HotKey(Key.PrintScreen, KeyModifier.None, OnHotKeyHandler);
         }
     }
 }
