@@ -37,7 +37,14 @@ namespace OhShit
 
         private void OnHotKeyHandler(HotKey hotKey)
         {
-            Process.Start(System.Configuration.ConfigurationManager.AppSettings.Get("cports_command_line"));
+            try
+            {
+                Process.Start(System.Configuration.ConfigurationManager.AppSettings.Get("command_line"), System.Configuration.ConfigurationManager.AppSettings.Get("arguments"));
+            }
+            catch (Exception ex)
+            {
+               // MessageBox.Show(ex.Message);
+            }
         }
 
         private void OhShit_Initialized(object sender, EventArgs e)
