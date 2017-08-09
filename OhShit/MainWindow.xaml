@@ -1,0 +1,14 @@
+﻿<Window x:Name="OhShit" x:Class="OhShit.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OhShit"
+        mc:Ignorable="d"
+        Title="Oh Shit !" Height="136.441" Width="235.064" WindowStyle="ToolWindow" Initialized="OhShit_Initialized">
+    <Grid>
+        <Label Content="Press CTRL+Backspace to exit POE" HorizontalAlignment="Left" Margin="16,22,0,0" VerticalAlignment="Top"/>
+        <Button Content="Quit" HorizontalAlignment="Left" Margin="76,66,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+
+    </Grid>
+</Window>
