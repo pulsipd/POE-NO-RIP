@@ -49,7 +49,7 @@ namespace OhShit
 
         private void OhShit_Initialized(object sender, EventArgs e)
         {
-            _hotKey = new HotKey(Key.PrintScreen, KeyModifier.None, OnHotKeyHandler);
+            _hotKey = new HotKey(Key.OemTilde, KeyModifier.None, OnHotKeyHandler);
         }
     }
 }
