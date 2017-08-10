@@ -39,7 +39,7 @@ namespace OhShit
         {
             try
             {
-                Process.Start(System.Configuration.ConfigurationManager.AppSettings.Get("command_line"), System.Configuration.ConfigurationManager.AppSettings.Get("arguments").ToString());
+               Process.Start(AppDomain.CurrentDomain.BaseDirectory + "cports.exe", System.Configuration.ConfigurationManager.AppSettings.Get("arguments").ToString());
             }
             catch (Exception ex)
             {
