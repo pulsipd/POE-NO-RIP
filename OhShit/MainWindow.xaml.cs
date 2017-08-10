@@ -25,6 +25,8 @@ namespace OhShit
     {
         private HotKey _hotKey = null;
 
+        private Key _key = Key.OemTilde;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -49,7 +51,14 @@ namespace OhShit
 
         private void OhShit_Initialized(object sender, EventArgs e)
         {
-            _hotKey = new HotKey(Key.OemTilde, KeyModifier.None, OnHotKeyHandler);
+            //_hotKey = new HotKey(_key, KeyModifier.None, OnHotKeyHandler);            
+        }
+
+        private void HotKeyBox_KeyUp(object sender, KeyEventArgs e)
+        {
+            _key = e.Key;
+            _hotKey = new HotKey(_key, KeyModifier.None, OnHotKeyHandler);
         }
     }
 }
+
