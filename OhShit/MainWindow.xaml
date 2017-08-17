@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OhShit"
         mc:Ignorable="d"
-        Title="Oh Shit !" Height="257.108" Width="383.064" Initialized="OhShit_Initialized" Foreground="{x:Null}" Background="White" >
+        Title="POE (!RIP)" Height="257.108" Width="383.064" Initialized="OhShit_Initialized" Foreground="{x:Null}" Background="White" >
     <Grid Margin="0,0,0,-6">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
